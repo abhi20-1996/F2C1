@@ -3,6 +3,9 @@ function calculate(num1, num2, operator) {
   // return the final value that you get after operating on num1 and num2 based on what the operator is
   // if operator == "+" then return num1+num2 , else if operator == "-" then return num1-num2 and so on....
   //   write your code here -->
+    if(isNaN(num1) || isNaN(num2)) {
+    return "Please enter valid numbers!";
+  }
   var result=0;
  if(operator=="+"){
    result=num1+num2;
